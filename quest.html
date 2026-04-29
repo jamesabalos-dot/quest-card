@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quest Card</title>
+  <style>
+    body {
+      background: #0f172a;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .card {
+      border: 2px solid #38bdf8;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      background: #1e293b;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .accept {
+      background: #22c55e;
+      color: white;
+    }
+    .maybe {
+      background: #f59e0b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎮 New Quest Available</h1>
+    <h2>Encouragement Hangout</h2>
+
+    <p><strong>Objective:</strong><br>
+    Spend time together, talk, and gain +10 encouragement</p>
+
+    <p><strong>Difficulty:</strong> Easy 😄</p>
+
+    <p><strong>Reward:</strong><br>
+    +Laughter +Good vibes +Getting to know each other</p>
+
+    <p>Would you like to accept this quest with me?</p>
+
+    <button class="accept" onclick="acceptQuest()">Accept Quest ✅</button>
+    <button class="maybe" onclick="maybeQuest()">Maybe Later ⏳</button>
+
+    <p id="response"></p>
+  </div>
+
+  <script>
+    function acceptQuest() {
+      document.getElementById("response").innerText =
+        "Quest accepted! 🎉 The quest will be on May 9, 2026 😄";
+    }
+
+    function maybeQuest() {
+      document.getElementById("response").innerText =
+        "No worries! This quest stays available 😄";
+    }
+  </script>
+
+</body>
+</html>
